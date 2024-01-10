@@ -2,7 +2,7 @@ require('dotenv').config()
 require('express-async-errors')
 const express = require('express'),
     cors = require('cors'),
-    morgan = require('morgan'),
+    //morgan = require('morgan'),
     path = require('path'),
     cookieParser = require('cookie-parser'),
     { logger } = require('../middleware/logger'),
@@ -17,7 +17,7 @@ module.exports = app =>{
     app.use(cors(corsOptions))
     app.use(cookieParser())
     app.use('/', express.static(path.join(global.root, 'public')))
-    app.use(morgan('dev'))
+    //app.use(morgan('dev'))
 
     //public routes
     app.use('/', require('../routes/root.routes'))
