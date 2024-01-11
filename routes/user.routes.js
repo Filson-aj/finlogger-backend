@@ -3,7 +3,7 @@ const express = require('express'),
     users = require('../controllers/users.controller')
     //verify = require('../middleware/verify.jwt')   
 
-router.use(verify) //authentication configuration
+//router.use(verify) //authentication configuration
 
 //basic user routes
 router.route('/')
