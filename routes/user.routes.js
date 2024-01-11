@@ -1,7 +1,7 @@
 const express = require('express'),
     router = express.Router(),
-    users = require('../controllers/users.controller'),
-    verify = require('../middleware/verify.jwt')   
+    users = require('../controllers/users.controller')
+    //verify = require('../middleware/verify.jwt')   
 
 router.use(verify) //authentication configuration
 
