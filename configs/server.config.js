@@ -25,7 +25,7 @@ module.exports = app =>{
     app.use('/auth', require('../routes/auth.routes'))
 
     //private routes
-    app.use('users', require('../routes/user.routes'))
+    app.use('/users', require('../routes/user.routes'))
 
     //catch unmatch routes
     app.all('*', (req, res) =>{
